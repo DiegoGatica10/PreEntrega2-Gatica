@@ -1,0 +1,41 @@
+header {
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: $mainColor;
+        padding: 10px 10px;
+        img{
+            width: $textBase;
+            height: $textBase;
+        }
+        ul{
+            display: flex;
+            list-style: none;
+            li{
+                a{
+                    text-decoration: none;
+                    font-size: 1em;
+                }
+            }
+        }
+        div{
+            div{
+                form{
+                    button{
+                        border: none;
+                        background-color: $mainColor;
+                    }
+                }
+                button{
+                    border: none;
+                    cursor: pointer;
+                    background-color: $mainColor;
+                }
+                }
+            }
+        }
+        button:hover{
+            background-color: rgb(28, 26, 10);
+        }
+    }

@@ -1,0 +1,109 @@
+h1{
+    color: $keyColor;
+    margin: 10px;
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+@mixin sizes ($width, $height){
+    width: $width;
+    height: $height;
+}
+main{
+    padding: 10px 10px;
+    background-image: url(../img/fondo.jpg);
+    background-size: auto;
+    img{
+        @include sizes(100%, 100%);
+    }
+}
+.newsBase{
+    display: grid;
+    padding: 10px;
+    row-gap: 5vh;
+}
+.news{
+    @extend .newsBase;
+    grid-template-columns:1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "nova" "novb" "novc" "novd";
+    img{
+        @include sizes(100%, 100%);
+    }
+}
+.nov-a{
+    grid-area: nova;
+}
+.nov-b{
+    grid-area: novb;
+}
+.nov-c{
+    grid-area: novc;
+}
+.nov-d{
+    grid-area: novd;
+}
+@media (width > 768px){
+    .newsBase{
+        display: grid;
+        padding: 10px;
+        row-gap: 5vh;
+    }
+    .news{
+        @extend .newsBase;
+        grid-template-columns:1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 5vh;
+        grid-template-areas: "nova novb" "novc novd";
+    }
+}
+@media (width > 1200px){
+    .newsBase1{
+        display: grid;
+        padding: 10px;
+        row-gap: 5vh;
+    }
+    .news{
+        @extend .newsBase1;
+        grid-template-columns:1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        column-gap: 5vh;
+        grid-template-areas: "nova novb novc novd";
+    }
+}
+.contact{
+    form {
+        width: 100%;
+        background-color: $secondaryColor;
+        text-align: center;
+    }
+} 
+.mapa{
+    @include sizes(100%, 100%);
+    display: flex;
+    object-fit: cover;
+    justify-content: center;
+}
+@keyframes animateDiv{
+    0%{background-color: rgba(2,0,36,1);}
+    55%{background-color: rgba(121,119,9,1);}
+    100%{background-color: rgba(0,212,255,1);}
+}
+.animate{
+    animation-name: animateDiv;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+}
+.who{
+    p{
+        @include sizes(40%, 50%);
+        padding: 10px;
+    }
+} 
+footer{
+    background-color: $tertiaryColor;
+    padding: 10px;
+}

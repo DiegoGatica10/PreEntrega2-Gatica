@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+h1 {
+  color: rgb(4, 3, 20);
+  margin: 10px;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+main {
+  padding: 10px 10px;
+  background-image: url(../img/fondo.jpg);
+  background-size: auto;
+}
+main img {
+  width: 100%;
+  height: 100%;
+}
+
+.newsBase, .news {
+  display: grid;
+  padding: 10px;
+  row-gap: 5vh;
+}
+
+.news {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "nova" "novb" "novc" "novd";
+}
+.news img {
+  width: 100%;
+  height: 100%;
+}
+
+.nov-a {
+  grid-area: nova;
+}
+
+.nov-b {
+  grid-area: novb;
+}
+
+.nov-c {
+  grid-area: novc;
+}
+
+.nov-d {
+  grid-area: novd;
+}
+
+@media (width > 768px) {
+  .newsBase, .news {
+    display: grid;
+    padding: 10px;
+    row-gap: 5vh;
+  }
+  .news {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 5vh;
+    grid-template-areas: "nova novb" "novc novd";
+  }
+}
+@media (width > 1200px) {
+  .newsBase1, .news {
+    display: grid;
+    padding: 10px;
+    row-gap: 5vh;
+  }
+  .news {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    column-gap: 5vh;
+    grid-template-areas: "nova novb novc novd";
+  }
+}
+.contact form {
+  width: 100%;
+  background-color: rgb(103, 140, 121);
+  text-align: center;
+}
+
+.mapa {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  object-fit: cover;
+  justify-content: center;
+}
+
+@keyframes animateDiv {
+  0% {
+    background-color: rgb(2, 0, 36);
+  }
+  55% {
+    background-color: rgb(121, 119, 9);
+  }
+  100% {
+    background-color: rgb(0, 212, 255);
+  }
+}
+.animate {
+  animation-name: animateDiv;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1s;
+}
+
+.who p {
+  width: 40%;
+  height: 50%;
+  padding: 10px;
+}
+
+footer {
+  background-color: rgb(91, 144, 144);
+  padding: 10px;
+}
+
+header nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(216, 210, 168);
+  padding: 10px 10px;
+}
+header nav img {
+  width: 70px;
+  height: 70px;
+}
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+header nav ul li a {
+  text-decoration: none;
+  font-size: 1em;
+}
+header nav div div form button {
+  border: none;
+  background-color: rgb(216, 210, 168);
+}
+header nav div div button {
+  border: none;
+  cursor: pointer;
+  background-color: rgb(216, 210, 168);
+}
+header button:hover {
+  background-color: rgb(28, 26, 10);
+}
+
+/*# sourceMappingURL=main.css.map */

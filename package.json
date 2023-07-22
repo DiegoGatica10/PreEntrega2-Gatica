@@ -1,0 +1,16 @@
+{
+  "name": "diego",
+  "version": "1.0.0",
+  "description": "Link al repositorio: https://github.com/DiegoGatica10/PreEntrega3-Gatica.git",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass",
+		"sass:watch": "sass --watch scss/main.scss  css/main.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.64.0"
+  }
+}
