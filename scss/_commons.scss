@@ -107,3 +107,25 @@ footer{
     background-color: $tertiaryColor;
     padding: 10px;
 }
+#error404{
+    background-image: url(../img/error404.webp);
+    width: 100%;
+    height: auto;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    .imgerrr{
+        width: 100%;
+    }
+    a{
+        text-decoration: none;
+        background-color: $tertiaryColor;
+        color: $mainFont;
+        padding: 10px 25px;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+}

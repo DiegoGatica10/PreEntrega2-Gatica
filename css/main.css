@@ -121,6 +121,29 @@ footer {
   padding: 10px;
 }
 
+#error404 {
+  background-image: url(../img/error404.webp);
+  width: 100%;
+  height: auto;
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  flex-direction: column;
+}
+#error404 .imgerrr {
+  width: 100%;
+}
+#error404 a {
+  text-decoration: none;
+  background-color: rgb(91, 144, 144);
+  color: "Roboto", sans-serif;
+  padding: 10px 25px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
 header nav {
   display: flex;
   flex-direction: column;
